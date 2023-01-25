@@ -28,7 +28,7 @@
 
 .header__logo {
     max-width: 176px;
-  }
+}
 
 .header__lang-links {
     display: flex;
@@ -37,7 +37,7 @@
     margin: 0;
     padding: 0 0 6px 0;
     list-style-type: none;
-  }
+}
 
 .header__lang-link {
     font-size: 24px;
@@ -46,10 +46,11 @@
     text-decoration: none;
     text-align: right;
     transition: 0.4s ease-in-out;
-  }
+}
+
 .header__lang-link_active {
     border-bottom: 1px solid #FFF;
-  }
+}
 
 .lead {
     display: flex;
@@ -58,7 +59,8 @@
     max-width: 984px;
     margin: 0 auto 92px auto;
     padding: 0;
-  }
+}
+
 .lead__title {
     margin: 0;
     padding: 0;
@@ -100,4 +102,206 @@
     line-height: 14px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    max-width: 690px;
+    margin: 0 auto 92px auto;
+    padding: 0;
+}
+
+.intro__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+}
+
+.intro__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.intro__list {
+    font-family: 'Inter';
+    font-style: normal;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    max-width: 1184px;
+    width: 100%;
+    margin: 0 auto 92px auto;
+    padding: 0;
+    gap: 16px;
+}
+
+.photo-grid__item {
+    width: 100%;
+    object-fit: cover;
+}
+
+.places {
+    margin: 0 auto 92px auto;
+    max-width: 984px;
+}
+
+.place {
+    max-width: 984px;
+    display: grid;
+    margin: 0 0 80px 0;
+    padding: 0;
+    grid-template: minmax(min-content, max-content) minmax(min-content, max-content) / minmax(340px, 460px) minmax(352px, 484px);
+    gap: 48px 40px;
+}
+
+.place__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+}
+
+.place__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.place__url-heading {
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.place__website {
+    align-self: end;
+}
+
+.place__paragraph {
+    margin: 0 0 26px 0;
+    padding: 0;
+}
+.place__paragraph:last-child {
+    margin: 0;
+}
+
+.place__description {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+.place__link {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: none;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    transition: 0.4s ease-in-out;
+}
+
+.cover {
+    margin: 0 auto 92px auto;
+    max-width: 1184px;
+    max-height: 740px;
+    width: 100%;
+    background-image: url("../images/cover-trains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    aspect-ratio: 16/10;
+    color: #FFF;
+    background-color: rgba(42, 44, 47, .3);
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.cover__overlay:hover {
+    background-color: rgba(42, 44, 47, .5);
+}
+
+.cover__title {
+    font-family: 'Inter';
+    font-style: normal;
+    max-width: 560px;
+    margin: 0 auto 32px auto;
+    padding: 0;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    text-align: center;
+}
+
+.cover__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1184px;
+    align-items: center;
+    margin: 0 auto 24px auto;
+}
+
+.footer__links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+}
+
+.footer__link {
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.footer__copyright {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
 }
